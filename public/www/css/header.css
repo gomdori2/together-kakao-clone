@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  height: 70px;
+  background: #000;
+  gap: 150px;
+}
+
+.header-logo {
+}
+.header-logo a {
+  width: 115px;
+  height: 100%;
+}
+
+.header-menu {
+  width: 600px;
+  background-color: aqua;
+}
