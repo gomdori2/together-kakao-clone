@@ -1,18 +1,102 @@
 .header {
-  display: flex;
-  height: 70px;
-  background: #000;
-  gap: 150px;
+  display: block;
+  position: fixed;
+  width: 100%;
 }
-
+.header-inner {
+  margin: 0 auto;
+  max-width: 1120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  height: 70px;
+  z-index: 999;
+  padding-left: 8px;
+}
+.header .inner {
+  height: 70px;
+}
+/* ****************************************로고**************************************** */
 .header-logo {
+  background: url(//t1.kakaocdn.net/together_image/svg/logo_mo.svg) center
+    center / contain no-repeat;
 }
 .header-logo a {
+  display: block;
   width: 115px;
-  height: 100%;
+  height: 70px;
 }
+/* ****************************************로고**************************************** */
 
+/* ****************************************메뉴**************************************** */
 .header-menu {
-  width: 600px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  height: 100%;
   background-color: aqua;
 }
+/* 따로 gap으로 띄울 필요성을 못느껴서 between줬음 */
+.header-menu ul {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.header-menu li {
+  display: flex;
+  height: 100%;
+}
+.header-menu li a {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  height: 100%;
+  padding: 0px 14px;
+  font-size: 16px;
+  color: rgb(68, 68, 68);
+}
+.active-line {
+  border-bottom: solid 1px;
+}
+/* js 작업 */
+/* .header-menu a:active {
+  border-bottom: 1px solid black;
+} */
+/* ****************************************메뉴**************************************** */
+
+/* ****************************************기타 아이콘 모아놓은곳**************************************** */
+/* 뭔가 끝선에 붙은 상태로 띄워져있는게 보기 이쁜거 같아서 */
+/* 부모요소에 10% ul에 space-between으로 정렬했음. */
+/* 유지보수 면에선 안좋은거 같은데 뭔가 기존 사이트는 margin을 px단위로 */
+/* 넣어둬서 그거나 이거나 크게 문제될건 없을거 같음  */
+.header-etc {
+  width: 10%;
+}
+.header-etc ul {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+/* li 중앙정렬 때문에 해놓음. */
+.header-etc ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 이건 좀 좋은 방법 생각해봐야할듯. */
+/* 문제점 각 지정하는 요소에 상위에 width height값이 다름. 그래서 width height줘야함. */
+/* user-image를 사용하는곳이 몇곳 있어서 상위 태그 따라가게 만듬. */
+.header-etc ul li a {
+  width: 24px;
+  height: 24px;
+}
+.ico-user-search {
+  background: url(../images/ico_user_search.svg) no-repeat;
+  background-size: cover;
+}
+.ico-toggle {
+  background: url(../images/ico_toggle.svg) no-repeat;
+  background-size: cover;
+}
+/* ****************************************기타 아이콘 모아놓은곳**************************************** */

@@ -23,49 +23,152 @@
     <!-- -----------------------------------nomalize----------------------------------- -->
     <!-- -----------------------------------css----------------------------------- -->
     <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
     <!-- -----------------------------------css----------------------------------- -->
     <!-- -----------------------------------js----------------------------------- -->
-
+    <script src="./js/header.js"></script>
+    <script src="./js/sidebar.js"></script>
     <!-- -----------------------------------js----------------------------------- -->
   </head>
   <body>
     <div class="wrap">
+      <!-- sidebar header 기준으로 오른쪽에[ 붙이려고 이렇게 만듬. -->
+      <!-- 반응형 기준 교수님이 이건 이상하다하신 부분은 기기별 os로 구분해서 보여주려함. -->
+      <div class="sidebar-wrap">
+        <div class="sidebar-wrap-inner">
+          <div class="sidebar-top">
+            <a href="#" target="_blank" class="user-image"></a>
+          </div>
+          <!-- 굳이 합쳐서 하는거보다 block 요소 단위로 나누면 더편할거 같아서 -->
+          <!-- info는 따로 빼서 관리 -->
+          <div class="sidebar-top-info">
+            <div class="sidebar-top-info-my">
+              <span>
+                <a href="#"></a>
+                <p>MY</p>
+              </span>
+            </div>
+            <div class="sidebar-top-info-notice">
+              <span>
+                <a href="#"></a>
+                <span>알림</span>
+              </span>
+            </div>
+          </div>
+          <div class="sidebar-middle">
+            <ul>
+              <li>
+                <i></i>
+                <span>같이 기부</span>
+              </li>
+              <li>
+                <i></i>
+                <span>모두의 행동</span>
+              </li>
+              <li>
+                <i></i>
+                <span>마음날씨</span>
+              </li>
+              <li>
+                <i></i>
+                <span>캠페인</span>
+              </li>
+            </ul>
+          </div>
+          <div class="sidebar-bottom">
+            <ul>
+              <li>같이가치 소개</li>
+              <li>매거진</li>
+              <li>공지사항</li>
+              <li>모금제안</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <!-- header -->
       <header class="header">
-        <!-- header-logo -->
-        <div class="header-logo">
-          <!-- 로고 들어옴. 자리잡아야함 -->
-          <a
-            style="
-              background: url(//t1.kakaocdn.net/together_image/svg/logo_mo.svg)
-                center center / contain no-repeat;
-            "
-          ></a>
-        </div>
-        <!-- header-menu -->
-        <div class="header-menu">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-        <!-- header-etc 기타 아이콘들 -->
-        <div class="header-etc">
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+        <div class="header-inner">
+          <!-- header-logo -->
+          <div class="header-logo">
+            <a></a>
+          </div>
+          <!-- header-menu -->
+          <div class="header-menu">
+            <ul>
+              <li><a>홈</a></li>
+              <li><a>매달기부</a></li>
+              <li><a>모두의행동</a></li>
+              <li><a>마음날씨</a></li>
+              <li><a>캠페인</a></li>
+            </ul>
+          </div>
+          <!-- header-etc 기타 아이콘들 -->
+          <div class="header-etc">
+            <ul>
+              <li><a href="#" class="user-image" target="_blank"></a></li>
+              <li>
+                <a class="ico-user-search"></a>
+              </li>
+              <li>
+                <a class="ico-toggle"></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </header>
+
       <main class="main-wrap">
         <div class="main-wrap-inner">
           <!-- main-left  -->
-          <div class="main-left"></div>
+          <div class="main-left">
+            <!-- 화면 보려고 해놓음  -->
+            <div
+              style="height: 100px; width: 100px; background-color: black"
+            ></div>
+            <div
+              style="height: 100px; width: 100px; background-color: black"
+            ></div>
+            <div
+              style="height: 100px; width: 100px; background-color: black"
+            ></div>
+            <div
+              style="height: 100px; width: 100px; background-color: black"
+            ></div>
+            <div
+              style="height: 100px; width: 100px; background-color: black"
+            ></div>
+            <div
+              style="height: 100px; width: 100px; background-color: black"
+            ></div>
+            <div
+              style="height: 100px; width: 100px; background-color: black"
+            ></div>
+            <div
+              style="height: 100px; width: 100px; background-color: black"
+            ></div>
+            <div
+              style="height: 100px; width: 100px; background-color: black"
+            ></div>
+            <div
+              style="height: 100px; width: 100px; background-color: black"
+            ></div>
+            <div
+              style="height: 100px; width: 100px; background-color: black"
+            ></div>
+            <div
+              style="height: 100px; width: 100px; background-color: black"
+            ></div>
+            <div
+              style="height: 100px; width: 100px; background-color: black"
+            ></div>
+            <div
+              style="height: 100px; width: 100px; background-color: black"
+            ></div>
+            <div
+              style="height: 100px; width: 100px; background-color: black"
+            ></div>
+          </div>
           <!-- main-right  -->
           <div class="main-right"></div>
         </div>

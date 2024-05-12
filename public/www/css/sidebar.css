@@ -1,0 +1,172 @@
+.sidebar-wrap {
+  position: fixed !important;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* top 굳이 필요없긴한데 그래도 혹시나 싶어서 넣어둠. */
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  color: rgb(32, 32, 32);
+  font-size: 16px;
+  font-style: normal;
+  display: none;
+  z-index: 99999;
+  transition: width 0.5s ease;
+}
+.sidebar-wrap-inner {
+  background-color: #fff;
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  /* 긴URL이나 긴 단어가 들어오면 글자단위로 줄 바꿈하는 css */
+  overflow-wrap: break-word;
+  gap: 15px;
+  width: 0;
+  height: 0;
+}
+.sidebar-show {
+  transition: width 0.5s ease;
+  width: 300px !important;
+  height: 100% !important;
+}
+
+/* ************************************************************* 사이드 바 탑************************************************************* */
+.sidebar-top {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.sidebar-top::after {
+  content: "로그인하세요";
+  font-weight: bold;
+}
+/* ************************************************************* 사이드 바 탑************************************************************* */
+/* ************************************************************* 사이드 바 탑 인포************************************************************* */
+.sidebar-top a {
+  width: 40px;
+  height: 40px;
+}
+.sidebar-top-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 6px;
+  background-color: rgb(249, 249, 249);
+  font-size: 13px;
+}
+.sidebar-top-info-my {
+  display: flex;
+  align-items: center;
+}
+.sidebar-top-info-my span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sidebar-top-info-my a {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: url(../images/ico_side_my.svg) no-repeat;
+  background-size: cover;
+}
+
+.sidebar-top-info-my p::after {
+  content: " ";
+  display: inline-block;
+  height: 14px;
+  margin-right: 10px;
+  margin-left: 35px;
+  border-right: 1px solid rgb(229, 229, 229);
+}
+.sidebar-top-info-my,
+.sidebar-top-info-notice {
+  padding: 12px;
+}
+.sidebar-top-info-notice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sidebar-top-info-notice span {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sidebar-top-info-notice a {
+  display: block;
+  width: 14px;
+  height: 15px;
+  background: url(../images/ico_side_notice.svg) no-repeat;
+  background-size: cover;
+}
+/* ************************************************************* 사이드 바 인포************************************************************* */
+
+/* ************************************************************* 사이드 바 미들************************************************************* */
+.sidebar-middle {
+  margin-top: 28px;
+}
+.sidebar-middle ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 700;
+}
+/* 따로 위치를 중앙에 배치할 필요가 없어서 요소 내부에서 중앙으로만 가게 해둠. */
+.sidebar-middle li {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: rgb(32, 32, 32);
+}
+/* *****************************나중에 emotion 적용할 때 for 돌릴것***************************** */
+.sidebar-middle ul :nth-child(1) i {
+  background: url(../images/ico_side_fundraising.svg) no-repeat;
+  background-size: cover;
+}
+.sidebar-middle ul :nth-child(2) i {
+  background: url(../images/ico_side_action.svg) no-repeat;
+  background-size: cover;
+}
+.sidebar-middle ul :nth-child(3) i {
+  background: url(../images/ico_side_weather.svg) no-repeat;
+  background-size: cover;
+}
+.sidebar-middle ul :nth-child(4) i {
+  background: url(../images/ico_side_campaign.svg) no-repeat;
+  background-size: cover;
+}
+/* *****************************나중에 emotion 적용할 때 for 돌릴것***************************** */
+/* ************************************************************* 사이드 바 미들************************************************************* */
+
+/* ************************************************************* 사이드 바 바텀************************************************************* */
+/* common에서 i태그 초기화 시키고 아이콘으로 사용  */
+/* 기본 아이콘 이미지를 20px로 잡고 그 외에는 덮어쓰는 형식으로 가려함. */
+.sidebar-bottom {
+  margin-top: 20px;
+}
+.sidebar-bottom ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-bottom li {
+  width: 50%;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  font-weight: bold;
+}
+
+.sidebar-bottom li:nth-child(even) {
+  padding-left: 30px;
+}
+/* ************************************************************* 사이드 바 바텀************************************************************* */
