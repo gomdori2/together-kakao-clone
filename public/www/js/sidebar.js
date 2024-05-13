@@ -8,13 +8,13 @@ window.addEventListener("load", function () {
   };
   const { sidebarWrap, icoToggle, sidebarWrapInner } = sidebar;
   sidebarWrap.addEventListener("click", (e) => {
-    console.log("aaa");
     if (e.target.className === "sidebar-wrap") {
-      sidebarWrap.classList.remove("sidebar-show");
+      sidebarWrapInner.classList.remove("sidebar-show");
+      sidebarWrap.style.right = "-100%";
     }
   });
   icoToggle.addEventListener("click", () => {
-    console.log("aaa");
-    sidebarWrap.classList.add("sidebar-show");
+    sidebarWrapInner.classList.toggle("sidebar-show");
+    sidebarWrap.style.right = 0;
   });
 });

@@ -35,7 +35,7 @@
   max-width: 600px;
   width: 100%;
   height: 100%;
-  background-color: aqua;
+  font-family: "KakaoBig Bold";
 }
 /* 따로 gap으로 띄울 필요성을 못느껴서 between줬음 */
 .header-menu ul {
@@ -48,6 +48,7 @@
   height: 100%;
 }
 .header-menu li a {
+  box-sizing: border-box;
   display: flex;
   justify-self: center;
   align-items: center;
