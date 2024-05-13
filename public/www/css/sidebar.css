@@ -3,34 +3,34 @@
   background-color: rgba(0, 0, 0, 0.3);
   /* top 굳이 필요없긴한데 그래도 혹시나 싶어서 넣어둠. */
   top: 0;
-  right: 0;
+  left: -1920px;
+  transition: left 0.5s ease;
   width: 100%;
   height: 100%;
   color: rgb(32, 32, 32);
   font-size: 16px;
   font-style: normal;
-  display: none;
   z-index: 99999;
-  transition: width 0.5s ease;
 }
 .sidebar-wrap-inner {
   background-color: #fff;
   position: fixed !important;
   top: 0;
-  right: 0;
+
   padding: 30px;
   display: flex;
   flex-direction: column;
   /* 긴URL이나 긴 단어가 들어오면 글자단위로 줄 바꿈하는 css */
   overflow-wrap: break-word;
   gap: 15px;
-  width: 0;
-  height: 0;
-}
-.sidebar-show {
-  transition: width 0.5s ease;
   width: 300px !important;
   height: 100% !important;
+  left: 100%;
+}
+/* 지금 내부구조 개판남 px좀 빼야함. */
+.sidebar-show {
+  transition: left 0.5s ease;
+  left: 100%;
 }
 
 /* ************************************************************* 사이드 바 탑************************************************************* */
