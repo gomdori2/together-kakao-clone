@@ -1,5 +1,5 @@
 window.addEventListener("load", function (e) {
-  const activeLine = document.querySelectorAll(".header-menu ul li a");
+  const activeLine = document.querySelectorAll(".header-menu ul li");
 
   function activeLines() {
     // 일단 해놓긴 했는데 다음에 해놓을 땐 좀 깔끔하게 만들어야 될듯함.
